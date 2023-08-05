@@ -145,9 +145,8 @@ body {
         object-position: 0;
     }
     #cev-banner{
-        height: 100px;
-        object-fit: none;
-        width: 193px;
+        object-fit: fill;
+        object-position: 0;
     }
 
 }
