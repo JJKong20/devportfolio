@@ -34,6 +34,14 @@ gulp.task('styles', function () {
 });
 
 gulp.task('watch', function() {
-    gulp.watch('./js/scripts.js', gulp.series('scripts'));
-    gulp.watch('./scss/styles.scss', gulp.series('styles'));
+    gulp.watch('./js/scripts.js', ['scripts']);
+    gulp.watch('./scss/styles.scss', ['styles']);
 });
+
+var connect = require('gulp-connect');
+gulp.task('webserver', function() {
+  connect.server({
+    livereload: true
+  });
+});
+gulp.task('default', ['webserver', 'watch']);
