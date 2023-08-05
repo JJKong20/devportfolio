@@ -503,6 +503,29 @@ footer {
         top: 100%;
         left: 303px;
     }
+
+    .mini-banner {
+        img{
+            height: 100px;
+            width: 618px;
+        }
+        #nationwide-banner {
+            object-fit: cover;
+            object-position: 50% 28%;
+        }
+        #bellwood-banner {
+            object-fit: contain;
+            object-position: 0;
+        }
+    }
+
+    #cev-banner{
+        height: 100px;
+        object-fit: none;
+        width: 193px;
+    }
+
+    
 }
 
 .vtimeline-content {
